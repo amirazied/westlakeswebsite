@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<canvas id="line-chart" width="800" height="450"></canvas>
+<script>
+new Chart(document.getElementById("line-chart"), {
+  type: 'line',
+  data: {
+    labels: ["Jan","Feb","March","April","May","June","July","Aug","Sept","Oct","Nov","Dec"],
+    datasets: [{
+        data: [188.0037712,206.1327063,229.6331777,199.9218674,179.2750247,0,0,318.1653156,260.2612742,61.5001486,353.9906858,271.017604],
+        label: "2017 - 2018",
+        borderColor: "#3e95cd",
+        fill: false
+      }, {
+        data: [182.3636581,
+199.9487251,
+222.7441823,
+193.9242114,
+173.8967739,
+0,
+0,
+308.6203561,
+252.453436,
+59.65514414,
+343.3709653,
+262.8870759],
+        label: "Reduction in 1 Year",
+        borderColor: "#8e5ea2",
+        fill: false
+      }, {
+        data: [171.5859659,
+188.1317554,
+209.5800012,
+182.4632905,
+163.6194746,
+0,
+0,
+290.3808931,
+237.5334379,
+56.12952512,
+323.0777412,
+247.3504497],
+        label: "Reduction in 3 Years",
+        borderColor: "#3cba9f",
+        fill: false
+      },
+    ]
+  },
+  options: {
+    title: {
+      display: true,
+      text: 'Carbon Emissions Year 2017/18'
+    }
+  }
+});
+</script>
+</head>
+<body>
+  yo
+</body>
+</html>
